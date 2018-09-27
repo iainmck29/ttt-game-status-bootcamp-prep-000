@@ -53,12 +53,11 @@ def draw?(board)
   end
 end
 
-def over?(board)
-  if won?(board) == true || draw?(board) == true || full?(board) == true
+def over?(new_board)
+  if won?(new_board) == true || draw?(new_board) == true || full?(new_board) == true
     return true
   end
 end
 
 def winner(board)
   if won?(board) == true
-  
