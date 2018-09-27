@@ -61,20 +61,4 @@ end
 
 def winner(board)
   if won?(board) == true
-    WIN_COMBINATIONS.each do |winners|
-        win_index_1 = winners[0]
-        win_index_2 = winners[1]
-        win_index_3 = winners[2]
-
-        position_1 = board[win_index_1]
-        position_2 = board[win_index_2]
-        position_3 = board[win_index_3]
-
-        if (position_1 == "X" && position_2 == "X" && position_3 == "X")
-          return "X"
-        elsif (position_1 == "O" && position_2 == "O" && position_3 == "O")
-          return "O"
-        end
-      end
-    end
-  end
+  
