@@ -58,8 +58,3 @@ def over?(new_board)
     return true
   end
 end
-
-def winner(board)
-  if won?(board) == true
-end
-end
