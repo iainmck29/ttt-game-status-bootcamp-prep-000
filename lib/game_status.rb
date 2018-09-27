@@ -59,7 +59,7 @@ def over?(board)
   end
 end
 
-def winner?(board)
+def winner(board)
   if won?(board) == true
     WIN_COMBINATIONS.each do |winners|
         win_index_1 = winners[0]
